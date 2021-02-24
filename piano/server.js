@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const Song = require('./models/song')
 const app = express()
 
-mongoose.connect('mongodb+srv://abhey1996:abhey1996@cluster1.vfp1y.mongodb.net/songRecorder?retryWrites=true&w=majority', {
+// Please add your mongo db connection string below
+mongoose.connect('', {
     useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true
 }, () => {
     console.log("db connected")
